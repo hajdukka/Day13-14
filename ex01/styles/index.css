@@ -1,0 +1,36 @@
+.grid {
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(22.5%, 1fr));
+  grid-auto-rows: 5px;
+}
+
+.grid img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.image {
+  position: relative;
+  width: 100%;
+}
+
+.image_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 0, 0);
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+}
+
+.image_overlay:hover {
+  opacity: 0.5;
+}
